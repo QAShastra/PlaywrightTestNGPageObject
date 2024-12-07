@@ -13,7 +13,7 @@ public class LoginTest extends BaseTest {
        LoginPage loginPage = new LoginPage(page);
        loginPage.loadingHRMLoginPage();
        String acutalValue = loginPage.loginHRM("Admin","admin123");
-       System.out.println("actual value is -- "+acutalValue);
+       System.out.println("actual value is updated-- "+acutalValue);
        Assert.assertEquals(acutalValue,exceptedValue);
 
     }
