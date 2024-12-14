@@ -11,13 +11,13 @@ public class LoginwithExtendReportIntegration {
 
     ExtentReports extent =null;
     ExtentSparkReporter spark = null;
-   /* @BeforeClass
+   @BeforeClass
     public  void startTest()
     {
           extent = new ExtentReports();
           spark = new ExtentSparkReporter("target/Spark/Spark.html");
 
-     }*/
+     }
 
    @Test(testName = "Verify the HRM Login page with Valid Username and Password",description = "Login feature",priority = 1
            ,groups = "smoke test")
@@ -46,13 +46,13 @@ public class LoginwithExtendReportIntegration {
     }
 
 
-/*
+
 @AfterClass
     public void tearDown(){
 
     extent.attachReporter(spark);
 }
-*/
+
 
 
 }
