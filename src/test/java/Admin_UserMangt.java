@@ -26,6 +26,6 @@ public class Admin_UserMangt {
 
     @AfterTest
     public void logoutApp(){
-        System.out.println("logout into App");
+        System.out.println("logout into App test");
     }
 }
