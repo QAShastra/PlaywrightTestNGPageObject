@@ -8,8 +8,10 @@ import org.testng.annotations.Test;
 //1. TestLayer
 public class LoginTest  {
     PlaywrightFactory pf ;
-    Page page =null;
-    LoginPage loginPage =null;
+    Page page = null;
+    LoginPage loginPage = null;
+    String username = "Admin";
+    String password ="admin123";
     @BeforeTest
     public void setup(){
         System.out.println("Base Test Class - setup Method");
@@ -22,7 +24,7 @@ public class LoginTest  {
            ,groups = "smoke test")
     public void loginApp() throws Exception{
        String exceptedValue = "Dashboard";
-       String acutalValue = loginPage.loginHRM("Admin","admin123");
+       String acutalValue = loginPage.loginHRM(username,password);
        System.out.println("actual value is updated "+acutalValue);
        Assert.assertEquals(acutalValue,exceptedValue);
 
