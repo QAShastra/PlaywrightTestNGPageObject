@@ -23,7 +23,7 @@ public class LoginTest  {
     public void loginApp() throws Exception{
        String exceptedValue = "Dashboard";
        String acutalValue = loginPage.loginHRM("Admin","admin123");
-       System.out.println("actual value is updated-- "+acutalValue);
+       System.out.println("actual value is updated "+acutalValue);
        Assert.assertEquals(acutalValue,exceptedValue);
 
     }
