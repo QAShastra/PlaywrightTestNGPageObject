@@ -7,7 +7,7 @@ import com.microsoft.playwright.Playwright;
 
 public class PlaywrightFactory {
 
-    public  static Page launchPlaywrightBrowser(String browerType) {
+    public    Page launchPlaywrightBrowser(String browerType) {
         Playwright playwright = Playwright.create();
         Browser browser = null;
         if (browerType.equals("chromium")) {
@@ -17,7 +17,10 @@ public class PlaywrightFactory {
         } else if (browerType.equals("webkit")) {
             browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false));
         }
-        return browser.newPage();
+
+        Page page = browser.newPage();
+        page.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        return page;
 
 
     }

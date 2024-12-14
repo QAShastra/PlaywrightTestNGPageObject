@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test name = "TestCase">
        <classes>
-         <class name="Admin_UserMangt2"></class>
+         <class name="LoginTest"></class>
        </classes>
     </test>
 </suite>
