@@ -3,7 +3,8 @@
 <suite name="All Test Suite">
     <test name = "TestCase">
        <classes>
-         <class name="DashboardTest"></class>
+         <class name="LoginwithExtendReportIntegration"></class>
+
        </classes>
     </test>
 </suite>

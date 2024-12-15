@@ -20,7 +20,7 @@ public class DashboardTest {
      @BeforeClass
     public void intialReportObject(){
         extent = new ExtentReports();
-        spark = new ExtentSparkReporter("target/Spark/HRMAppTestResults.html");
+        spark = new ExtentSparkReporter("target/Spark/HRMAppTestResults2.html");
          extent.attachReporter(spark);
 
     }
