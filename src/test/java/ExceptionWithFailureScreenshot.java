@@ -123,7 +123,10 @@ public class ExceptionWithFailureScreenshot{
                     MarkupHelper.createLabel(result.getName() + " - Test Case Skipped", ExtentColor.ORANGE));
         }
     }
-
+  @Test
+    public void testM1(){
+        System.out.println(" git testcase ");
+    }
     @AfterTest
     public void quit() {
         // If flush method did not call, Report will not generate.
